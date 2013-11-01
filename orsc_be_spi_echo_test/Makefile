@@ -1,7 +1,7 @@
 # oRSC backend SPI test
 
-HW=../orsc_be_hw
-BSP=../orsc_be_bsp
+HW=../orsc_be_hw_spi
+BSP=../orsc_be_bsp_spi
 
 IPBUS=$(SOFTIPBUS)
 

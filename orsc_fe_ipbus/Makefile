@@ -4,7 +4,7 @@ HW=../orsc_fe_hw
 BSP=../orsc_fe_bsp
 
 INCLUDES=-I../common/buffer-types \
-	 -I../common/spi-stream
+	 -I../spistream
 
 include ../Makefile
 
@@ -14,7 +14,7 @@ LAYER1_DIR=..
 DEVICENR=2
 
 # Make a single megalibrary of all user code.
-SRCS=$(wildcard src/*.c) $(wildcard ../common/spi-stream/*.c) \
+SRCS=$(wildcard src/*.c) $(wildcard ../spistream/*.c) \
      $(wildcard ../common/buffer-types/*.c) 
 
 orsc_fe_spi_echo_test.elf: $(SRCS)

@@ -15,15 +15,15 @@ popd
 
 
 # Setup an env var pointing to your softipbus installation
-export SOFTIPBUS=$HOME/trigger_code/softipbus
+export SOFTIPBUS=/afs/hep.wisc.edu/home/tapas/afs_cms_tapas/work/trigger/onsoft_23Oct2013/softipbus
 
 # Include xdaq libraries
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/xdaq/lib
 
 # Run VMEStream in ECHOTEST mode (for now)
-export VME_CONTROLLER=TESTECHO
+export VME_CONTROLLER=CAEN
 
-export RCTSTUFF=/nfshome0/rctts/cactusprojects/rct/
+export RCTSTUFF=/cms/cmslab/trigger_upgrade/cactusprojects/rct
 
 export PATH=$RCTSTUFF/bin:$PATH
 export LD_LIBRARY_PATH=$RCTSTUFF/lib:$LD_LIBRARY_PATH
