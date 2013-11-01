@@ -1,0 +1,14 @@
+elfcheck
+Xilinx EDK 14.4 Build EDK_P.49d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../orsc_fe_hw/system.xml -pe microblaze_0 payload.elf
+ 
+
+ELF file	: payload.elf
+ERROR:EDK:3165 - elfcheck failed!
+The following sections did not fit into Processor  memory:
+	Section .stack (0x7F90 - 0x9F8F)
+
+Try using the linker script generation tools to generate an ELF that maps
+correctly to your hardware design.
